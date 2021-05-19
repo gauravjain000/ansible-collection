@@ -3,6 +3,7 @@
   hosts: localhost
   tasks:
     - name: 'Install OCI PIP'
+      delegate_to: localhost
       pip:
         name: 'oci'
 ...
