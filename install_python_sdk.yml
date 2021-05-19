@@ -1,8 +1,8 @@
 ---
-- name: Installing oci python library using Ansible pip module
- # hosts: all
-  #become: yes
-  #become_user: root
-  
-  pip:
-    name: oci
+- name: 'all'
+  hosts: localhost
+  tasks:
+    - name: 'Install OCI PIP'
+      pip:
+        name: 'oci'
+...
